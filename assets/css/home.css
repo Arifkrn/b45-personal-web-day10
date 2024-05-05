@@ -1,0 +1,45 @@
+.card-body{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.card-content{
+    width: 70%;
+    margin: 10px;
+    padding: 10px;
+}
+.card-img{
+    margin: 10px;
+    padding: 10px;
+    box-shadow:  rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 30%; 
+}
+.profile-img{
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .card-body{
+        flex-direction: column;
+        
+    }
+    .card-content{
+        width: 100%;
+        text-align: center;
+    }
+    .card-img{
+        text-align: center;
+        width: 50%;
+        justify-items: center;
+        margin: 0 auto;
+    }
+    .profile-img{
+        width: 100%;
+    }
+    .profil-name{
+        width: 100%;
+    }
+    .profil-profesi{
+        width: 100%;
+    }
+}

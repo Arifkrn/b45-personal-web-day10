@@ -1,0 +1,96 @@
+.navbar {
+    background-color: #002c6e;
+    padding: 20px;
+    width: 100%;
+  }
+  .navbar-ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .navbar-left {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .active {
+    color: #71aaff;
+  }
+  
+  .navbar-logo {
+    width: 50px;
+  }
+  
+  .navbar-contact-btn {
+    padding: 10px;
+    background-color: #0b5ed7;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    align-items: center;
+  }
+  
+  .hamburger-nav-link {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid white;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .hamburger-active {
+    background-color: #0b5ed7;
+  }
+  
+  #hamburger-button {
+    display: none;
+  }
+  
+  .hide {
+    display: none !important;
+  }
+  
+  .hamburger-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #9a9a9a;
+    align-items: center;
+  }
+  
+  .sosmed{
+    margin: 20px 0;
+    gap: 10px;
+    width: 30px;
+    height: 30px;
+  }
+  @media only screen and (max-width: 600px) {
+    .nav{
+        width: 100%;
+    }
+    .navbar-link {
+      display: none;
+    }
+  
+    .navbar-contact-btn {
+      display: none;
+    }
+  
+    #hamburger-button {
+      display: block;
+    }
+    
+  }
