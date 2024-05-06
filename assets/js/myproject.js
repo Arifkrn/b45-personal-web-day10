@@ -118,7 +118,7 @@ function addProject(event){
     if (differenceInYears > 0) {
         duration = `${differenceInYears} years, ${differenceInMonths} month, ${differenceInDays} days`
     } else if (differenceInMonths > 0) {
-        duration = `${differenceInMonths} month, ${differenceInDays} days`
+        duration = `${differenceInMonths} month ${differenceInDays} days`
     } else {
         duration = `${differenceInDays} days`
     }
@@ -148,15 +148,18 @@ function newData(){
         <img src="${project.image}" class="card-img-top w-50" alt="coding">
         <div class="card-body">
             <div class="d-flex justify-content-end w-100">
-                <a href="#" class="btn btn-primary me-2">Edit</a>
-                <a href="#" class="btn btn-primary">Delete</a>
+                <a href="#" class="btn btn-warning me-2">Edit</a>
+                <a href="#" class="btn btn-danger">Delete</a>
             </div>
-          <h5 class="card-title">"${project.projectName}"</h5>
-          <p class="startDate" id="startDate">"${project.startDate}"</p>
-          <p class="endDate" id="endDate">"${project.endDate}"</p>
-          <p class="" id="durasi">"${project.duration}"</p>
-          <p class="card-text" id="description">"${project.description}"</p>
-          <p id="technology">"${project.technology}"/p>
+          <h5 class="card-title">${project.projectName}</h5>
+          <div class="d-flex">
+          <p class="startDate" id="startDate">${project.startDate}</p>
+          <p> ----</p>
+          <p class="endDate" id="endDate">${project.endDate}</p>
+          </div>
+          <p class="" id="durasi">${project.duration}</p>
+          <p class="card-text" id="description">${project.description}</p>
+          <p id="technology">${project.technology}</p>
         </div>
       </div>
         `
